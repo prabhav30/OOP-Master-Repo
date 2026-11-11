@@ -8,6 +8,8 @@
 # This is all my own work as per the Eynesbury College Academic Integrity Policy
 
 
+#TASK 01
+
 class Person: 
     def __init__(self,name,age,money):
         self.__name = name
