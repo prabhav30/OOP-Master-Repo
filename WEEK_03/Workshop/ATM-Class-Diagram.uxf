@@ -1,0 +1,97 @@
+<diagram program="umletino" version="15.1"><zoom_level>7</zoom_level><element><id>UMLClass</id><coordinates><x>567</x><y>343</y><w>147</w><h>133</h></coordinates><panel_attributes>ATM
+--
+-location: string
+--
++display()
++withdraw()
++deposit()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>854</x><y>364</y><w>147</w><h>133</h></coordinates><panel_attributes>SavingAccount
+--
+number: integer
+owner: string
+balance: long
+--
+makeWithdrawal()
+makeDeposit()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>707</x><y>399</y><w>161</w><h>35</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=0..*
+display &gt;</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1106</x><y>350</y><w>147</w><h>133</h></coordinates><panel_attributes>Branch
+--
+name: string
+branchNumber: long
+location: string
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>994</x><y>406</y><w>126</w><h>35</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=0..*
+affiliatedWith &gt;</panel_attributes><additional_attributes>160;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>854</x><y>560</y><w>147</w><h>133</h></coordinates><panel_attributes>Record
+--
+id: integer
+timestamp: datetime
+amount: integer
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>924</x><y>490</y><w>70</w><h>84</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=0..*
+hasHistory &gt;</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1113</x><y>98</y><w>147</w><h>119</h></coordinates><panel_attributes>Bank 
+--
+name: string 
+hedquarters: string
+branchers: list 
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1176</x><y>210</y><w>35</w><h>154</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1= 1..*
+m2= 1</panel_attributes><additional_attributes>10;10;10;200</additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>140</y><w>147</w><h>105</h></coordinates><panel_attributes>Wireless Sensor
+--
+-id: string
+--
++getID(): string
++readCard(): string</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>609</x><y>238</y><w>28</w><h>119</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1= 1
+m2= 1
+</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>574</x><y>742</y><w>140</w><h>98</h></coordinates><panel_attributes>Street ATM
+--
+-transcation_limit: int - 5000
+--
++get_limit(): int
++set_limit(x: int): none
++withdraw(amount:float): none </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>707</x><y>126</y><w>707</w><h>700</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1..*
+&lt; operates </panel_attributes><additional_attributes>10;970;920;960;920;10;790;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>294</x><y>343</y><w>140</w><h>119</h></coordinates><panel_attributes>Restaurant_ATM
+--
+-transcation_limit: int - 500
+--
++get_limit(): int
++set_limit(x: int): none
++withdraw(amount:float): none </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>308</x><y>665</y><w>126</w><h>105</h></coordinates><panel_attributes>Pub_ATM
+--
+-transcation_limit: int - 250
+--
++get_limit(): int
++set_limit(x: int): none
++withdraw(amount:float): none 
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>21</x><y>350</y><w>154</w><h>105</h></coordinates><panel_attributes>Restaurant 
+--
+name: string 
+location: string
+table_number: int
+no_of_pokies: int
+tables_occupied: int
+--
++get_limit_of_people(): int
++get_limit_of_people():int
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>644</y><w>161</w><h>119</h></coordinates><panel_attributes>Pub 
+--
+name: string
+location: string
+table_number: int
+number_of_pokies: int
+--
++get_limit_of_people(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>623</x><y>469</y><w>21</w><h>287</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;390</additional_attributes></element><element><id>Relation</id><coordinates><x>427</x><y>413</y><w>154</w><h>21</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>200;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>364</x><y>448</y><w>217</w><h>231</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>290;10;170;10;10;190;10;310</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>714</y><w>168</w><h>35</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+operates &gt;</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>Relation</id><coordinates><x>168</x><y>378</y><w>140</w><h>35</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+operates &gt;</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element></diagram>
