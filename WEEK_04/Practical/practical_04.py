@@ -66,3 +66,9 @@ class Person:
 # print(girl.isAlive())
 # print(girl.getMoney())
 
+class Employee(Person):
+    def __init__(self, name, age, money, jobTitle, wage):
+        super().__init__(name, age, money)
+        self.__wage = wage
+        self.__jobTitle.__ = jobTitle
+        self.hours = 0 
