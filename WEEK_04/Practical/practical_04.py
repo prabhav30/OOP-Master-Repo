@@ -70,8 +70,8 @@ class Employee(Person):
     def __init__(self, name, age, money, jobTitle, wage):
         super().__init__(name, age, money)
         self.__wage = wage
-        self.__jobTitle.__ = jobTitle
-        self.hours = 0 
+        self.__jobTitle = jobTitle
+        self.__hours = 0 
 
 
     def getJobTitle(self): 
@@ -88,3 +88,15 @@ class Employee(Person):
         self.__money += (self.__hours)*(self.__wage)
         self.__hours = 0
 
+
+#Test code below
+ada = Employee('Ada', 36, 3000, 'mathematician', 40)
+print(ada.getJobTitle())
+ada.work(8)
+ada.receivePay()
+print("$" + str(ada.getMoney()))
+ada.setWage(100)
+ada.work(8)
+ada.receivePay()
+print("$" + str(ada.getMoney()))
+ada.die()
