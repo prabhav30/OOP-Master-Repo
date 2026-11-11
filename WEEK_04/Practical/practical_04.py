@@ -40,3 +40,6 @@ class Person:
         else: 
             print("Cannot spend that much money")
             print("Insufficient Funds !")
+
+    def die(self): 
+        self.__alive = False    
