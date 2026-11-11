@@ -37,11 +37,32 @@ class Person:
         self.__age += 1 
 
     def spendMoney(self, amount): 
-        if amount <= self._money: 
-            self._money -= amount
+        if amount <= self.__money:  #corrected a typo
+            self.__money -= amount  #corrected a typo 
         else: 
             print("Cannot spend that much money")
             print("Insufficient Funds !")
 
     def die(self): 
-        self.__alive = False    
+        self.__alive = False
+
+# #testing the code above
+# girl = Person('Tiffany', 22, 5000.50)
+# # Testing getters
+# print(girl.getName())
+# print(girl.getAge())
+# print(girl.isAlive())
+# print(girl.getMoney())
+
+# # Testing mutator
+# girl.setName('Tiffany Smith')
+# girl.haveBirthday()
+# girl.spendMoney(500.50)
+# girl.die()
+
+# # Print again
+# print(girl.getName())
+# print(girl.getAge())
+# print(girl.isAlive())
+# print(girl.getMoney())
+
