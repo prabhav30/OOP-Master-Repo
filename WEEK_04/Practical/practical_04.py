@@ -89,14 +89,41 @@ class Employee(Person):
         self.__hours = 0
 
 
-#Test code below
-ada = Employee('Ada', 36, 3000, 'mathematician', 40)
-print(ada.getJobTitle())
-ada.work(8)
-ada.receivePay()
-print("$" + str(ada.getMoney()))
-ada.setWage(100)
-ada.work(8)
-ada.receivePay()
-print("$" + str(ada.getMoney()))
-ada.die()
+# #Test code below
+# ada = Employee('Ada', 36, 3000, 'mathematician', 40)
+# print(ada.getJobTitle())
+# ada.work(8)
+# ada.receivePay()
+# print("$" + str(ada.getMoney()))
+# ada.setWage(100)
+# ada.work(8)
+# ada.receivePay()
+# print("$" + str(ada.getMoney()))
+# ada.die()
+
+
+# TASK 03 
+
+import random 
+
+class Programmer(Employee):
+    def __init__(self, name, age, money, wage):
+        super().__init__(name, age, money, "programmer", wage)
+
+    def createCode(self):
+        
+        codeList = [
+            "print('hello world')",
+            "x=0",
+            "raise Exception('What am I doing??')"]
+
+        return random.choice(codeList)
+
+    def work(self, numHours):
+        super().work(numHours)
+
+        for i in range(numHours):
+            print(self.createCode())
+
+
+
