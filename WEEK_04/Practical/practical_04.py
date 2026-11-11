@@ -72,3 +72,19 @@ class Employee(Person):
         self.__wage = wage
         self.__jobTitle.__ = jobTitle
         self.hours = 0 
+
+
+    def getJobTitle(self): 
+        return self.__jobTitle
+    
+    def setWage(self, wage): 
+        if wage>0: 
+            self.__wage = wage
+            
+    def work(self, numHours):
+        self.__hours += numHours
+    
+    def receivePay(self): 
+        self.__money += (self.__hours)*(self.__wage)
+        self.__hours = 0
+
