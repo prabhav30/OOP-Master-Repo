@@ -88,6 +88,8 @@ class Employee(Person):
         self.__money += (self.__hours)*(self.__wage)
         self.__hours = 0
 
+    
+
 
 # #Test code below
 # ada = Employee('Ada', 36, 3000, 'mathematician', 40)
@@ -124,6 +126,5 @@ class Programmer(Employee):
 
         for i in range(numHours):
             print(self.createCode())
-
 
 
