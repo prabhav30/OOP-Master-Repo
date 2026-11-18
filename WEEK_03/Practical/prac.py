@@ -91,7 +91,7 @@ class Deck:
 
 class Hand: 
     def __init__(self): 
-        sellf.cards =[]
+        self.cards =[]
 
     def addToHand(self,card): 
         if len(self.__card)<5: 
@@ -113,7 +113,7 @@ class Hand:
 
         for card in self.__cards: 
             self.desc.append(card.toString())
-        print(",".join(self,desc))
+        print(",".join(self.desc))
 
 
 #finishing task 03 
