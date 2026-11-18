@@ -54,3 +54,17 @@ programmer.birthday()
 print(programmer.getFullName(), 'is', programmer.getAge())
 print(programmer.getNameHarvardFormat())
 print(programmer)
+
+
+#TASK 02
+
+class Book:
+
+    def __init__(self, authors, title, publisher, publishYear, publishPlace):
+        if len(authors) >= 1:
+            self.__authors = authors
+
+        self.__title = title
+        self.__publisher = publisher
+        self.__publishYear = publishYear
+        self.__publishPlace = publishPlace
