@@ -81,4 +81,22 @@ class Book:
              + ', ' + self.__publishPlace
 
         return r 
+
+#Task -2.2
+
+    def __str__(self):
+        return self.getHavardReference()
+
+# testing task 2 & 2.2
+
+programmer = Person(['Augusta', 'Ada', 'King'], 36)
+engineer = Person(['Charles', 'Babbage'], 50)
+actualAuthor = Person(['Sydney', 'Padua'], 30)
+book = Book([programmer, engineer, actualAuthor],
+            'The Thrilling Adventures of Lovelace and Babbage',
+            'Penguin Books', 2015, 'Westminster')
+print(book)
+book.displayAuthors()
+book.displayAuthors()
+# print(book.getHavardReference())
     
