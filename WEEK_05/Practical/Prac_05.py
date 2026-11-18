@@ -36,3 +36,21 @@ class Person:
 
     def getAge(self):
         return self.__age
+
+    def getNameHarvardFormat(self):
+        surname = self.__names[-1]
+        initials = ""
+
+        for names in range(len(self.__names) - 1):
+            initials += self.__names[names][0]
+
+        return surname + " " + initials
+
+# Task 1 & 1.2 testing
+
+programmer = Person(['Augusta', 'Ada', 'King'], 36)
+print(programmer.getFullName(), 'is', programmer.getAge())
+programmer.birthday()
+print(programmer.getFullName(), 'is', programmer.getAge())
+print(programmer.getNameHarvardFormat())
+print(programmer)
