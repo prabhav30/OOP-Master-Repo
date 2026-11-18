@@ -22,4 +22,17 @@ class Person:
         else:
             print("Error: Age must be more then zero")
             self.__age = 0
-    
+
+
+    # Task 1.2
+    def __str__(self):
+        return 'Person:' + ' ' + 'Name=' + self.getFullName() + ' ' + 'Age=' + str(self.getAge())
+
+    def getFullName(self):
+        return " ".join(self.__names)
+
+    def birthday(self):
+        self.__age += 1
+
+    def getAge(self):
+        return self.__age
