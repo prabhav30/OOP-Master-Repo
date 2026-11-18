@@ -68,3 +68,17 @@ class Book:
         self.__publisher = publisher
         self.__publishYear = publishYear
         self.__publishPlace = publishPlace
+
+    def displayAuthors(self):
+        print(self.__authors)
+
+    def getHavardReference(self):
+        r = ""
+        for author in self.__authors:
+            r += author.getNameHarvardFormat() + ', '
+
+        r += self.__title + ', ' + self.__publisher + ', ' + str(self.__publishYear) \
+             + ', ' + self.__publishPlace
+
+        return r 
+    
