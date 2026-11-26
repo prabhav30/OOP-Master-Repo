@@ -85,3 +85,13 @@ class Person:
         return ('First name: ' + self.first_name +
                 '\nLast name: ' + self.last_name +
                 '\nDOB: ' + str(self.date_of_birth))
+
+
+class Worker:
+    def __init__(self, tax_file_number, super_number):
+        self.tax_file_number = tax_file_number
+        self.super_number = super_number
+
+    def get_info(self):
+        return ('Tax File Number: ' + str(self.tax_file_number) +
+                '\nSuper Number: ' + str(self.super_number))
