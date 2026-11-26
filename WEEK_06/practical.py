@@ -95,3 +95,15 @@ class Worker:
     def get_info(self):
         return ('Tax File Number: ' + str(self.tax_file_number) +
                 '\nSuper Number: ' + str(self.super_number))
+
+
+class Employee2(Person, Worker):
+    def __init__(self, first_name, last_name, date_of_birth,
+                 tax_file_number, super_number, employ_id, position):
+
+        Person.__init__(self, first_name, last_name, date_of_birth)
+
+        Worker.__init__(self, tax_file_number, super_number)
+
+        self.employ_id = employ_id
+        self.position = position
