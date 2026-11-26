@@ -107,3 +107,13 @@ class Employee2(Person, Worker):
 
         self.employ_id = employ_id
         self.position = position
+
+    def get_details(self):
+        return ('Name: ' + self.first_name + " " + self.last_name +
+                '\nDOB: ' + str(self.date_of_birth) +
+                '\n----------------------------' +
+                '\nEmployee ID: ' + str(self.employ_id) +
+                '\nPosition: ' + self.position +
+                '\n----------------------------' +
+                '\nTax File Number: ' + str(self.tax_file_number) +
+                '\nSuper Number: ' + str(self.super_number))
